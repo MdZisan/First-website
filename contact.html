@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="contact form.css">
+    
+    
+  </head>
+  <body>
+    <div class="header" id="topheader">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container text-uppercase">
+          <a class="navbar-brand font-weight-bold text-white" href="index.html">MD Zisan </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse hvr" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-uppercase">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/zisan.omar.official" target="_blank">FACEBOOK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/zisan_islam/" target="_blank">INSTAGRAM</a>
+              </li><li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/zisan_omar" target="_blank">TWITTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://zisanislam.blogspot.com/" target="_blank">PHOTOGRAPHY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login page.html" target="_blank">LOG IN</a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="text-center form1">
+      <h3>Contact Form</h3>
+      <div class="container ">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Input your email">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <!--******************** own 2****************** -->
+    <h1 class="ml11 text-center">
+    <span class="text-wrapper">
+      <span class="line line1"></span>
+      <span class="letters">Submit Your Information_</span>
+    </span>
+    </h1>
+    <!-- copy right -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml11 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+    anime.timeline({loop: true})
+    .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+    })
+    .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+    }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+    }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+    });
+    </script>
+  </body>
+</html>

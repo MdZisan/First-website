@@ -1,0 +1,152 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;
+ font-family: 'Poppins', sans-serif; }
+a {
+	text-decoration: none;
+}
+a:hover{text-decoration: none;
+
+}
+li{
+	list-style: none; 
+}
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #606060
+}
+h1 {
+	
+}
+.hvr a:hover{
+	/*color: #50d1c0;
+	background: orange;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	border-radius: 100px;*/
+	transform: translateY(-3px);
+
+}
+.extra-div h2, .servicediv h2{
+	font-size: 0.9rem;
+	margin: 20px 0 15px 0;
+	font-weight: bold;
+	line-height: 1.1;
+	word-spacing: 4px
+}
+
+.header{
+	width: 100%;
+	height:100vh;
+	 background-image:linear-gradient(rgba(0, 168, 255, 0.3),rgba(0, 168, 255, 0.3)) , url('back.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*clip-path: polygon(100% 0%,100% 77%, 50% 100%, 0 75%, 0 0);*/
+	
+}
+.header:before{
+	content: "";
+	position: absolute; 
+	top: 0%;
+	bottom: 0% ;
+	left: 0;
+	right: 0;
+	opacity: .3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+.navbar:before{
+	content: "";
+	position: absolute; 
+	top: 0%;
+	bottom: 0% ;
+	left: 0;
+	right: 0;
+	opacity: .3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+
+}
+.nav-item a{
+	color:#fff!important;
+	font-weight: bold;
+	color: white;
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+  
+
+  /*************************form********************/
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: skyblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+  .form1{
+  	margin-top: 90px;
+  	/*height: 100px;
+  	width: 100%;
+
+*/
+padding: 100px 0 100px 0;
+  }
+  /******************************form********************/
+  .ml11 { 
+  	/*margin-bottom: 40px;*/
+  font-weight: 700;
+  font-size: 3.5em;
+  background: gray;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
+}
